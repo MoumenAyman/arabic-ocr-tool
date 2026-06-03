@@ -52,7 +52,7 @@ ad_html = """
 components.html(ad_html, height=120, scrolling=False)
 st.write("اضغط على الزر بالأسفل للحصول على كورسات مجانية وأدوات ذكاء اصطناعي مدفوعة مجاناً اليوم:")
 
-            ad_url = "https://www.effectivecpmnetwork.com/iqgj1jtvww?key=f7e706f2b0edf09001cb50d0c9f6488c"
+ad_url = "https://www.effectivecpmnetwork.com/iqgj1jtvww?key=f7e706f2b0edf09001cb50d0c9f6488c"
 
             st.markdown(f'''
             <a href="{ad_url}" target="_blank" style="text-decoration: none;">
