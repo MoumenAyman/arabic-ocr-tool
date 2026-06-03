@@ -35,7 +35,6 @@ if uploaded_file is not None:
             st.error("عذراً، حدث خطأ أثناء المعالجة الفنية على الخادم.")
 
             st.write("---")
-            # كود الإعلان المضمون داخل حاوية مستقلة
 ad_html = """
 <div style="text-align: center; margin-top: 20px;">
     <script type="text/javascript">
@@ -50,9 +49,6 @@ ad_html = """
     <script type="text/javascript" src="//www.highperformanceformat.com/كود_المفتاح_بتاعك/invoke.js"></script>
 </div>
 """
-
-# تشغيل الإعلان كـ مكون HTML مستقل، مع تحديد الطول (مهم جداً)
-# تأكد إن الـ height هنا بيساوي الـ height المكتوب في كود الإعلان (غالباً 90 أو 100)
 components.html(ad_html, height=120, scrolling=False)
             st.write("اضغط على الزر بالأسفل للحصول على كورسات مجانية وأدوات ذكاء اصطناعي مدفوعة مجاناً اليوم:")
 
