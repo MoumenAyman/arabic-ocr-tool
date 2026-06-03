@@ -54,7 +54,7 @@ st.write("اضغط على الزر بالأسفل للحصول على كورسا
 
 ad_url = "https://www.effectivecpmnetwork.com/iqgj1jtvww?key=f7e706f2b0edf09001cb50d0c9f6488c"
 
-            st.markdown(f'''
+st.markdown(f'''
             <a href="{ad_url}" target="_blank" style="text-decoration: none;">
                 <div style="background-color: #25D366; color: white; text-align: center; padding: 15px; border-radius: 10px; font-size: 20px; font-weight: bold; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
                  اضغط هنا لتفعيل الميزات المتقدمة وسحب الهدايا مجانا
