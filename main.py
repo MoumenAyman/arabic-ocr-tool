@@ -61,7 +61,7 @@ st.markdown(f'''
                 </div>
             </a>
             ''', unsafe_allow_html=True)
-            st.write("---")
+st.write("---")
 
 st.write("---")
 st.markdown("""
