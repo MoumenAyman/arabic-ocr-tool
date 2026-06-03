@@ -50,7 +50,7 @@ ad_html = """
 </div>
 """
 components.html(ad_html, height=120, scrolling=False)
-            st.write("اضغط على الزر بالأسفل للحصول على كورسات مجانية وأدوات ذكاء اصطناعي مدفوعة مجاناً اليوم:")
+      st.write("اضغط على الزر بالأسفل للحصول على كورسات مجانية وأدوات ذكاء اصطناعي مدفوعة مجاناً اليوم:")
 
             ad_url = "https://www.effectivecpmnetwork.com/iqgj1jtvww?key=f7e706f2b0edf09001cb50d0c9f6488c"
 
