@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components  
 from PIL import Image
 import pytesseract
 
@@ -26,7 +27,7 @@ if uploaded_file is not None:
             extracted_text = pytesseract.image_to_string(image, lang='ara+eng')
 
             if extracted_text.strip():
-                st.success("✨ تم استخراج النص بنجاح!")
+                st.success(" تم استخراج النص بنجاح!")
                 st.text_area("النص المستخرج:", value=extracted_text, height=250)
             else:
                 st.warning("لم نتمكن من العثور على نص واضح في الصورة. تأكد من جودة الإضاءة ووضوح الخط.")
@@ -34,7 +35,25 @@ if uploaded_file is not None:
             st.error("عذراً، حدث خطأ أثناء المعالجة الفنية على الخادم.")
 
             st.write("---")
-            st.markdown("### مكافآت وهدايا لمستخدمي الموقع")
+            # كود الإعلان المضمون داخل حاوية مستقلة
+ad_html = """
+<div style="text-align: center; margin-top: 20px;">
+    <script type="text/javascript">
+	atOptions = {
+		'key' : 'كود_المفتاح_بتاعك_هنا',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/كود_المفتاح_بتاعك/invoke.js"></script>
+</div>
+"""
+
+# تشغيل الإعلان كـ مكون HTML مستقل، مع تحديد الطول (مهم جداً)
+# تأكد إن الـ height هنا بيساوي الـ height المكتوب في كود الإعلان (غالباً 90 أو 100)
+components.html(ad_html, height=120, scrolling=False)
             st.write("اضغط على الزر بالأسفل للحصول على كورسات مجانية وأدوات ذكاء اصطناعي مدفوعة مجاناً اليوم:")
 
             ad_url = "https://www.effectivecpmnetwork.com/iqgj1jtvww?key=f7e706f2b0edf09001cb50d0c9f6488c"
